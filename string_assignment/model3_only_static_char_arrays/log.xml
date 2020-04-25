@@ -1,0 +1,10 @@
+<model_run>
+<codetype>serial</codetype>
+<nodes>1</nodes>
+<!-- <time> unit: milliseconds -->
+<!-- <time> timer resolution: unspecified)-->
+<!-- <time> timer overhead: ~9.54e-04 ms)-->
+<iteration><no>1</no><time>1</time></iteration>
+<!-- <totaltime> unit: seconds -->
+<totaltime>0.002</totaltime>
+</model_run>

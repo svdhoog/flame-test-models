@@ -1,0 +1,20 @@
+<states>
+<itno>0</itno>
+<environment>
+</environment>
+<xagent>
+<name>Eurostat</name>
+  <id>1</id>
+  <data>{16.0,2.0,3.0,4.0}</data>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>2</id>
+  <var>16.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>3</id>
+  <var>16.0</var>
+</xagent>
+</states>

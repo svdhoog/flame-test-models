@@ -1,0 +1,11 @@
+<states>
+<itno>0</itno>
+<environment>
+</environment>
+<xagent>
+<name>Household</name>
+  <id>1</id>
+  <my_x>{a}</my_x>
+  <my_y>{a,b}</my_y>
+</xagent>
+</states>

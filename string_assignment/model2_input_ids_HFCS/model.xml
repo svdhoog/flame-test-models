@@ -1,0 +1,44 @@
+<xmodel version="2">
+ <name>New Model</name>
+ <version></version>
+ <description></description>
+ <models/>
+ <environment>
+  <constants/>
+ <functionFiles>
+   <file>Functions.c</file>
+ </functionFiles>
+
+  <timeUnits/>
+  <dataTypes/>
+ </environment>
+ <agents>
+  <xagent>
+   <name>Household</name>
+   <description></description>
+   <memory>
+    <variable>
+     <type>int</type>
+     <name>id</name>
+     <description></description>
+    </variable>
+    <variable>
+     <type>char_array</type>
+     <name>id_hfcs</name>
+     <description></description>
+    </variable>
+   </memory>
+   <functions>
+    <function>
+     <name>Function_1</name>
+     <description></description>
+     <currentState>00</currentState>
+     <nextState>01</nextState>
+     <inputs/>
+     <outputs/>
+    </function>
+   </functions>
+  </xagent>
+ </agents>
+ <messages/>
+</xmodel>

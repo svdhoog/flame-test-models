@@ -1,0 +1,13 @@
+<states>
+<itno>0</itno>
+<environment>
+</environment>
+<xagent>
+<name>Sender</name>
+  <id>1</id>
+</xagent>
+<xagent>
+<name>Receiver</name>
+  <id>2</id>
+</xagent>
+</states>

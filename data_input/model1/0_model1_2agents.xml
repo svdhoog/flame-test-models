@@ -1,0 +1,15 @@
+<states>
+<itno>0</itno>
+<environment>
+</environment>
+<xagent>
+<name>Household</name>
+  <id>1</id>
+  <var>1.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>2</id>
+  <var>3.0</var>
+</xagent>
+</states>

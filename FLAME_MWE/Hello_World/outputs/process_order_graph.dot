@@ -1,0 +1,7 @@
+digraph communication_graph {
+	rankdir=BT;
+	size="8,5;"
+	layer_0 [ color="#ff0000" label="layer 0"];
+	Simple_say_hello_start_Simple_end_Simple [ shape = rect label="Simple_say_hello_start_Simple_end_Simple [0]" ];
+	Simple_say_hello_start_Simple_end_Simple -> layer_0;
+}

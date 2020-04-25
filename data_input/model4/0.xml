@@ -1,0 +1,61 @@
+<states>
+<itno>0</itno>
+<environment>
+</environment>
+<xagent>
+<name>Eurostat</name>
+  <id>1</id>
+  <data>{16.0,2.0,3.0,4.0}</data>
+  <data_readin>{0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0}</data_readin>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>2</id>
+  <var>0.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>3</id>
+  <var>1.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>4</id>
+  <var>2.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>5</id>
+  <var>3.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>6</id>
+  <var>4.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>7</id>
+  <var>5.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>8</id>
+  <var>6.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>9</id>
+  <var>7.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>10</id>
+  <var>8.0</var>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>11</id>
+  <var>9.0</var>
+</xagent>
+</states>

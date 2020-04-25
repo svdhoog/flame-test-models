@@ -1,0 +1,29 @@
+digraph state_graph {
+	rankdir=TB;
+	size="8,5;"
+	
+	/* Layers */
+	layer_0 [shape=plaintext, label="layer 0"];
+	layer_0_b [style=invis, shape=point];
+	layer_0_a [style=invis, shape=point];
+	layer_0_b -> layer_0 [style=invis];
+	layer_0 -> layer_0_a [style=invis];
+	
+	/* States */
+	Simple_end_Simple [label = "end_Simple"]
+	Simple_start_Simple [label = "start_Simple"]
+	
+	/* Functions */
+	Simple_say_hello_start_Simple_end_Simple [label = "say_hello", shape = rect]
+	
+	/* Message types */
+	
+	/* Transitions */
+	Simple_start_Simple -> Simple_say_hello_start_Simple_end_Simple;
+	Simple_say_hello_start_Simple_end_Simple -> Simple_end_Simple;
+	
+	/* Communications */
+	{ rank=same; layer_0;  Simple_say_hello_start_Simple_end_Simple; }
+	{ rank=same; layer_0_b; }
+	{ rank=same; layer_0_a; }
+}

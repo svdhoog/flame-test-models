@@ -1,0 +1,26 @@
+digraph state_graph {
+	rankdir=TB;
+	size="8,5;"
+	layer_0 [shape=plaintext, label="layer 0"];
+	layer_1 [shape=plaintext, label="layer 1"];
+	layer_0 -> layer_1 [style=invis];
+	
+	/* States */
+	Sender_end_Sender [label = "end_Sender"]
+	Sender_start_Sender [label = "start_Sender"]
+	Receiver_end_Receiver [label = "end_Receiver"]
+	Receiver_start_Receiver [label = "start_Receiver"]
+	Sender_sender_sends_mesg_start_Sender_end_Sender [label = "sender_sends_mesg", shape = box,style=filled,color=antiquewhite];
+	Receiver_receiver_reads_mesg_start_Receiver_end_Receiver [label = "receiver_reads_mesg", shape = box,style=filled,color=antiquewhite];
+	
+	/* Transitions */
+	Sender_start_Sender -> Sender_sender_sends_mesg_start_Sender_end_Sender;
+	Sender_sender_sends_mesg_start_Sender_end_Sender -> Sender_end_Sender;
+	Receiver_start_Receiver -> Receiver_receiver_reads_mesg_start_Receiver_end_Receiver;
+	Receiver_receiver_reads_mesg_start_Receiver_end_Receiver -> Receiver_end_Receiver;
+	
+	/* Communications */
+	Sender_sender_sends_mesg_start_Sender_end_Sender -> Receiver_receiver_reads_mesg_start_Receiver_end_Receiver [ label = "hello" color="#00ff00" constraint=false];
+	{ rank=same; layer_0;  Sender_sender_sends_mesg_start_Sender_end_Sender; }
+	{ rank=same; layer_1;  Receiver_receiver_reads_mesg_start_Receiver_end_Receiver; }
+}

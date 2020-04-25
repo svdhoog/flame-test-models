@@ -1,0 +1,35 @@
+ <xmodel version="2">
+ <name>Hello, World!</name>
+ <version>Version 1.0, 06.10.2017</version>
+ <description>Author: Sander van der Hoog.</description>
+ <models/>
+  <environment>
+    <functionFiles>
+   <file>agent_functions.c</file>
+  </functionFiles>
+  </environment>
+  <agents>
+  <xagent>
+   <name>Simple</name>
+   <description></description>
+   <memory>
+    <variable>
+     <type>int</type>
+     <name>id</name>
+     <description>Agent ID.</description>
+    </variable>
+   </memory>
+    <functions>
+    <function>
+     <name>say_hello</name>
+     <description></description>
+     <currentState>start_Simple</currentState>
+     <nextState>end_Simple</nextState>
+     <inputs/>
+     <outputs/>
+    </function>
+   </functions>
+  </xagent>
+ </agents>
+ <messages/>
+</xmodel>

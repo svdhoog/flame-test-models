@@ -1,0 +1,12 @@
+Functions.c: In function ‘Function_1’:
+Functions.c:7:35: error: subscripted value is neither array nor pointer nor vector
+  printf("\n\t myx: %c%c%c\n", MY_Z[0], MY_Z[1], MY_Z[2]);
+                                   ^
+Functions.c:7:44: error: subscripted value is neither array nor pointer nor vector
+  printf("\n\t myx: %c%c%c\n", MY_Z[0], MY_Z[1], MY_Z[2]);
+                                            ^
+Functions.c:7:53: error: subscripted value is neither array nor pointer nor vector
+  printf("\n\t myx: %c%c%c\n", MY_Z[0], MY_Z[1], MY_Z[2]);
+                                                     ^
+make: *** [Functions.o] Error 1
+mv: cannot stat ‘main’: No such file or directory

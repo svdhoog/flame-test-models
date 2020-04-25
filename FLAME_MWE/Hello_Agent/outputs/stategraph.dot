@@ -1,0 +1,50 @@
+digraph state_graph {
+	rankdir=TB;
+	size="8,5;"
+	
+	/* Layers */
+	layer_0 [shape=plaintext, label="layer 0"];
+	layer_0_b [style=invis, shape=point];
+	layer_0_a [style=invis, shape=point];
+	layer_0_b -> layer_0 [style=invis];
+	layer_0 -> layer_0_a [style=invis];
+	layer_1 [shape=plaintext, label="layer 1"];
+	layer_1_b [style=invis, shape=point];
+	layer_1_a [style=invis, shape=point];
+	layer_1_b -> layer_1 [style=invis];
+	layer_1 -> layer_1_a [style=invis];
+	layer_0_a -> layer_1_b [style=invis];
+	
+	/* States */
+	Sender_end_Sender [label = "end_Sender"]
+	Sender_start_Sender [label = "start_Sender"]
+	Receiver_end_Receiver [label = "end_Receiver"]
+	Receiver_start_Receiver [label = "start_Receiver"]
+	
+	/* Functions */
+	Sender_sender_sends_mesg_start_Sender_end_Sender [label = "sender_sends_mesg", shape = rect]
+	Receiver_receiver_reads_mesg_start_Receiver_end_Receiver [label = "receiver_reads_mesg", shape = rect]
+	
+	/* Message types */
+	hello_message [ label = "hello" color="#00ff00" shape = parallelogram];
+	hello_message -> hello_message_start_0 [ color="#00ff00" ];
+	hello_message_start_0 [ label = "start 0" color="#00ff00" shape = parallelogram];
+	hello_message_start_0 -> hello_message_end_0 [ color="#00ff00" ];
+	hello_message_end_0 [ label = "end 1" color="#00ff00" shape = parallelogram];
+	hello_message_end_0 -> Receiver_receiver_reads_mesg_start_Receiver_end_Receiver [ color="#00ff00" label = "" ];
+	
+	/* Transitions */
+	Sender_start_Sender -> Sender_sender_sends_mesg_start_Sender_end_Sender;
+	Sender_sender_sends_mesg_start_Sender_end_Sender -> Sender_end_Sender;
+	Receiver_start_Receiver -> Receiver_receiver_reads_mesg_start_Receiver_end_Receiver;
+	Receiver_receiver_reads_mesg_start_Receiver_end_Receiver -> Receiver_end_Receiver;
+	
+	/* Communications */
+	Sender_sender_sends_mesg_start_Sender_end_Sender -> hello_message [ color="#00ff00" ];
+	{ rank=same; layer_0;  Sender_sender_sends_mesg_start_Sender_end_Sender; }
+	{ rank=same; layer_0_b; }
+	{ rank=same; layer_0_a; hello_message_start_0; }
+	{ rank=same; layer_1;  Receiver_receiver_reads_mesg_start_Receiver_end_Receiver; }
+	{ rank=same; layer_1_b; hello_message_end_0; }
+	{ rank=same; layer_1_a; }
+}

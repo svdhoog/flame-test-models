@@ -1,0 +1,63 @@
+BASE=/media/sander/DataStorage1/GIT/GitLab/ETACE-GIT/svn-import
+Starting XParsing
+FLAME_XPARSER_DIR=/media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1
+MODEL_DIR=/media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS
+Now in: /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1
+xparser (Version 0.17.1)
+
+***Info: Evnironment variable FLAME_XPARSER_DIR set - looking in /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1 for Templates
+
+Code type       : Serial (DEBUG)
+Input XMML file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/model.xml
+Model root dir  : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/
+Template dir    : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//
+
+Reading XMML file (/media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/model.xml)
+- Model name     : New Model
+- Functions file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/Functions.c
+- xagent   : Household
+End of XMML file
+
+Creating dependency graph
+Finished dependency loop check
+Total communication sync lengths = 0
+Ordering functions in process layers
+New communication sync lengths = 0
+
+Writing file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/stategraph.dot
+Writing file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/stategraph_colour.dot
+Writing file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/process_order_graph.dot
+Writing file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/latex.tex
+
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/Makefile using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//Makefile.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/xml.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//xml.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/main.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//main.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/header.h using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//header.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/memory.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//memory.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/low_primes.h using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//low_primes.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/messageboards.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//messageboards.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/partitioning.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//partitioning.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/timing.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//timing.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/Doxyfile using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//Doxyfile.tmpl
+Generating /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/rules.c using /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/utils/xparser-0.17.1//rules.tmpl
+
+Writing header file : /media/sander/DataStorage1/GIT/GitLab/ABM@ECB/ABM_at_ECB/code/test_models/string_assignment/model2_input_ids_HFCS/Household_agent_header.h
+
+--- xparser finished ---
+
+To compile and run the generated code, you will need:
+ * libmboard (version 0.3.0 or newer)
+XParsing done.
+rm -f Functions.o main.o memory.o xml.o messageboards.o partitioning.o rules.o timing.o main main.exe 
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g Functions.c -o Functions.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g main.c -o main.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g memory.c -o memory.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g xml.c -o xml.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g messageboards.c -o messageboards.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g partitioning.c -o partitioning.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g rules.c -o rules.o
+gcc -c -I/usr/local/lib/include  -std=c99 -D_DEBUG_MODE -g timing.c -o timing.o
+gcc -L/usr/local/lib/lib Functions.o main.o memory.o xml.o messageboards.o partitioning.o rules.o timing.o -o main -lmboard_sd  -lm
+Compilation done.
+Moved main ->main_sd
+Script done.

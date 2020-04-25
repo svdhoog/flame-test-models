@@ -1,0 +1,14 @@
+
+"Reserved variable names" for FLAME
+
+If the variables (double) x,y, or z are present in a model, these are reserved for position.
+
+In parsed C code: readAgentXML, line 416:
+
+If x or y or z are present:
+	
+	posx = (double)current_Household_agent->x;
+	posy = (double)current_Household_agent->y;
+	posz = (double)current_Household_agent->z;
+
+If one is not present, the respective posX variable is set to 0.0.

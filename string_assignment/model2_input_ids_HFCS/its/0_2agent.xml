@@ -1,0 +1,15 @@
+<states>
+<itno>0</itno>
+<environment>
+</environment>
+<xagent>
+<name>Household</name>
+  <id>1</id>
+  <id_hfcs>{NL1083011001}</id_hfcs>
+</xagent>
+<xagent>
+<name>Household</name>
+  <id>2</id>
+  <id_hfcs>{IT2864462001}</id_hfcs>
+</xagent>
+</states>
